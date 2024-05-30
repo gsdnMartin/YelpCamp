@@ -1,0 +1,28 @@
+services:
+  # Mongodb service
+  db:
+    container_name: db_container
+    image: mongo:latest
+    restart: always
+    networks:
+      - counter-net
+
+  # Node api service
+  frontend:
+    restart: always
+    container_name: node_container
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    networks:
+      - counter-net
+    environment:
+      MONGODB_URI: mongodb://db:27017/yelpcamp
+    depends_on: 
+      - db
+      
+networks:
+  counter-net:
+    driver: bridge

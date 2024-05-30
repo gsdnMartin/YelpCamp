@@ -17,7 +17,7 @@ const userRoutes = require('./routes/users');
 const campgroundRoutes = require('./routes/campgrounds');
 const reviewRoutes = require('./routes/reviews');
 
-const dbUrl = process.env.DB_URL
+const dbUrl = process.env.MONGODB_URI
 
 const MongoDBStore = require('connect-mongo')(session)
 
