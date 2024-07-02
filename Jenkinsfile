@@ -19,13 +19,11 @@ pipeline {
         stage("Building App") {
             steps {
                 sh 'npm install'
-                sh "ls"
-                sh "pwd"
             }
             
         }
 
-        /*
+        
         stage("Test App") {
             steps {
                 sh "npm test"
@@ -37,7 +35,7 @@ pipeline {
             steps {
                 sh "npm run build"
             }
-        }*/
+        }
       
     }
 }
