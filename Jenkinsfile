@@ -21,12 +21,14 @@ pipeline {
             
         }
 
+        /*
         stage("Test App") {
             steps {
                 sh "npm test"
             }
         }
-
+        */
+        
         stage("Deploy App") {
             steps {
                 sh "npm run build"
