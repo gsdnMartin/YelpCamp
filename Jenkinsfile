@@ -4,7 +4,7 @@ pipeline {
     tools {nodejs "Node18"}
 
     environment {
-        MONGODB_URI = 'mongodb+srv://gusdanmx:<#wYt%p?9dyR@_XR>@cluster0.6fzwzeu.mongodb.net/?appName=Cluster0'
+        MONGODB_URI = 'mongodb+srv://gusdanmx:eGjj7PQY2TaCzUvO@cluster0.6fzwzeu.mongodb.net/?appName=Cluster0'
     }
         
     stages {
