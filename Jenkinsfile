@@ -11,7 +11,7 @@ pipeline {
         stage("Clean Up the Workspace") {
             steps {
                 cleanWs()
-                sh 'echo Working'
+                sh 'echo Working...'
             }
         }
 
