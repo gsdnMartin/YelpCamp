@@ -34,7 +34,7 @@ pipeline {
         
         stage("Deploy App") {
             steps {
-                sh "npm run build"
+                sh "node app.js"
             }
         }
       
