@@ -16,7 +16,7 @@ pipeline {
 
         stage("Building App") {
             steps {
-                //sh "npm install"
+                sh "npm install"
                 sh "ls"
                 sh "pwd"
             }
