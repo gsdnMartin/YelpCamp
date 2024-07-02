@@ -29,7 +29,7 @@ pipeline {
 
         stage("Deploy App") {
             steps {
-                sh "npm start"
+                sh "npm run build"
             }
         }
       
